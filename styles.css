@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    width: 60%;
+}
+.interface {
+    box-shadow: 0 0 10px rgba(178, 178, 178, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #FFD1DC, #FFC3A0);
+    margin-bottom: 5px;
+}
+.innerHeading{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tasks{
+    height: 80%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(178, 178, 178, 1);
+    border-radius: 20px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.headingClass{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.taskHeading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 168, 255);
+    font-size: 20px;
+}
+.taskHeadingClass{
+    color: rgb(255, 168, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.add , .delete{
+    border-radius: 10px;
+    background: none;
+    border-style: solid;
+    height: 50px;
+    width: 100px;
+    border-color: rgb(220, 220, 220);
+    color: rgb(255, 168, 255);
+    font-size: 25px;
+    border-width: 2px;
+    cursor: pointer;
+    border-color: rgb(255, 168, 255);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.add:hover, .delete:hover {
+    background-color: rgb(255, 168, 255);
+    color: white;
+}
+.add:active, .delete:active{
+    background-color: rgb(255, 168, 255);
+    transform: scale(0.95);
+}
+.editTasks{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+.TasksToday{
+    height: 60%;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(238, 238, 238);
+}
+.taskMade{
+    width: 100%;
+    height: 16.666%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    display: none;
+}
+.addTaskAct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.inputTask{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.taskDes, .date, .priority, .time{
+    width: 80%;
+    height: 12%;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 192, 192);
+    color: rgb(0, 0, 0);
+}
+.addTask{
+    width: 25%;
+    height: 15%;
+    background-color: white;
+    color: rgb(255, 168, 255);
+    font-size: 20px;
+    border-width: 2px;
+    cursor: pointer;
+    border-color: rgb(255, 168, 255);
+    transition: background-color 0.3s, transform 0.2s;
+    border-style: solid;
+    border-radius: 5px;
+}
+.addTask:active{
+    background-color: rgb(255, 168, 255);
+    transform: scale(0.95);
+}
+.addTask:hover{
+    background-color: rgb(255, 168, 255);
+    color: white;
+}
+.taskDes::placeholder, .date::placeholder, .priority::placeholder, .time::placeholder{
+    padding-left: 3%;
+}
+.TaskLabel{
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    color: rgb(58, 58, 58);
+}
+.TaskDTP{
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    color: rgb(58, 58, 58);
+    font-weight: 100;
+}
+.minus{
+    display: none;
+    font-size: 20px;
+    color: black;
+}
+.minus{
+    display: inline;
+}
+.about{
+    color: black;
+    font-size: 20px;
+}

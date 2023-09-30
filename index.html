@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="interface">
+        <div class="headingClass">
+            <h1 class="innerHeading">TaskMate</h1>
+        </div>
+        <div class="tasks">
+            <div class="taskHeading">
+                <h2 class="taskHeadingClass">Tasks</h2>
+            </div>
+            <div id="TasksToday" class="TasksToday">
+                <p id="placeholderText">Add a task</p>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask1" class="TaskLabel"></p><p id="ltask1" class="TaskDTP"></p></div></div>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask2" class="TaskLabel"></p><p id="ltask2" class="TaskDTP"></p></div></div>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask3" class="TaskLabel"></p><p id="ltask3" class="TaskDTP"></p></div></div>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask4" class="TaskLabel"></p><p id="ltask4" class="TaskDTP"></p></div></div>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask5" class="TaskLabel"></p><p id="ltask5" class="TaskDTP"></p></div></div>
+                <div class="taskMade task"><div id="sepTask" class="sepTask"><p id="dtask6" class="TaskLabel"></p><p id="ltask6" class="TaskDTP"></p></div></div>
+            </div>
+            <div id="editTasks" class="editTasks">
+                <button id="add" class="add">Add</button>
+                <button id="delete" class="delete">Delete</button>
+            </div>
+            <div id="inputTask" class="inputTask">
+                <form id="taskForm" class="addTaskAct">
+                    <input id="taskDes" type="text" name="taskDescription" placeholder="Enter Task" class="taskDes">
+                    <input id="date" type="text" name="taskDate" placeholder="Enter Date" class="date">
+                    <input id="time" type="text" name="taskTime" placeholder="Enter Time" class="time">
+                    <input id="priority" type="text" name="taskPriority" placeholder="Enter Priority (High / Mid / Low)" class="priority">
+                    <button id="addTaskact" type="submit" class="addTask">Add task</button>
+                </form>
+            </div>            
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
